@@ -4,9 +4,9 @@ def run_guessing_game
   puts "Guess a number between 1 and 6"
   input = ''
   input = gets
-  if input == rand6
+  if input === rand6
     return puts "You guessed the correct number!"
-  elsif input == "exit"
+  elsif input === "exit"
     return puts "Goodbye!"
   else 
     puts "Sorry! The computer guessed #{rand6}."
